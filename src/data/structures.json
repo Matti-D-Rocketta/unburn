@@ -1,0 +1,52 @@
+[
+  {
+    "id": "poelee",
+    "nom": "Poêlée séquencée",
+    "duree_min": 20,
+    "materiel": ["poêle"],
+    "max_ingredients": 6,
+    "slots": [
+      { "role": "gras",                "min": 1, "max": 1, "moment": "debut",    "bloquant": true },
+      { "role": "proteine",            "min": 0, "max": 1, "moment": "marquage", "bloquant": false },
+      { "role": "aromatique",          "min": 1, "max": 3, "moment": "base",     "bloquant": false },
+      { "role": "roussissement_court", "min": 0, "max": 2, "moment": "base",     "bloquant": false },
+      { "role": "corps",               "min": 1, "max": 3, "moment": "cuisson",  "bloquant": true },
+      { "role": "liquide",             "min": 0, "max": 1, "moment": "cuisson",  "bloquant": false },
+      { "role": "acide",               "min": 1, "max": 1, "moment": "hors_feu", "bloquant": false },
+      { "role": "finition",            "min": 1, "max": 2, "moment": "hors_feu", "bloquant": false }
+    ],
+    "principe": "ordre_par_temps_de_cuisson"
+  },
+  {
+    "id": "plaque",
+    "nom": "Tout au four sur une plaque",
+    "duree_min": 35,
+    "materiel": ["four", "plaque"],
+    "max_ingredients": 6,
+    "slots": [
+      { "role": "gras",       "min": 1, "max": 1, "moment": "preparation", "bloquant": true },
+      { "role": "corps",      "min": 1, "max": 4, "moment": "preparation", "bloquant": true },
+      { "role": "proteine",   "min": 0, "max": 1, "moment": "preparation", "bloquant": false },
+      { "role": "aromatique", "min": 0, "max": 3, "moment": "preparation", "bloquant": false },
+      { "role": "acide",      "min": 1, "max": 1, "moment": "sortie",      "bloquant": false },
+      { "role": "finition",   "min": 1, "max": 2, "moment": "sortie",      "bloquant": false }
+    ],
+    "principe": "une_seule_couche_pas_de_surcharge"
+  },
+  {
+    "id": "oeufs",
+    "nom": "Œufs sur garniture",
+    "duree_min": 12,
+    "materiel": ["poêle"],
+    "max_ingredients": 5,
+    "slots": [
+      { "role": "gras",       "min": 1, "max": 1, "moment": "debut",    "bloquant": true },
+      { "role": "aromatique", "min": 0, "max": 2, "moment": "base",     "bloquant": false },
+      { "role": "corps",      "min": 0, "max": 2, "moment": "cuisson",  "bloquant": false },
+      { "role": "proteine",   "min": 1, "max": 1, "moment": "oeufs",    "bloquant": true, "ingredient_impose": "oeufs" },
+      { "role": "acide",      "min": 0, "max": 1, "moment": "hors_feu", "bloquant": false },
+      { "role": "finition",   "min": 1, "max": 2, "moment": "hors_feu", "bloquant": false }
+    ],
+    "principe": "les_oeufs_arrivent_en_dernier_feu_doux"
+  }
+]
