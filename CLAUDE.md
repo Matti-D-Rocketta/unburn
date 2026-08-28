@@ -43,7 +43,7 @@ N'invente aucune règle culinaire absente de la spécification. Signale-la comme
 
 | Lot | Contenu | État |
 |-----|---------|------|
-| 1 | Données JSON et moteur | **fait**, 44 contrôles au vert |
+| 1 | Données JSON et moteur | **fait**, `node scripts/verifier.mjs` au vert |
 | 2 | 7 écrans, 4 composants, `App.jsx` | à faire |
 | 3 | PWA, service worker, `wakeLock`, journal, export, README complet | à faire |
 
@@ -106,6 +106,22 @@ ajouter. Idem pour le champ `affinites`.
 **La règle d'équilibre de l'écran *Ce soir*** se lit sur le champ `nutrition`, jamais sur
 `roles` : les pois chiches sont typés `corps` seul mais comptent comme protéine dans
 l'assiette.
+
+**Propositions : structures incomplètes affichées.** L'écran *Propositions* affiche
+toujours les 3 structures. Une structure `incomplete` porte un badge et la liste des
+rôles manquants (`manquants`), elle n'est pas sélectionnable.
+
+**Compatibilité du plat long.** Le plat long apparaît sur *Propositions* dès que
+`compatible_si.temps_declare` est vérifié (case « j'ai du temps » cochée), sans
+comparaison avec le garde-manger — `echine_porc` porte `selectionnable: false`, il ne
+peut de toute façon pas être coché. La carte affiche un avertissement non bloquant
+listant les ingrédients du plat, à vérifier par l'utilisateur.
+
+**Signal des étapes d'assaisonnement fusionnées.** `genererEtapes` affiche le signal
+propre de l'ingrédient absorbé quand l'étape n'en absorbe exactement qu'un ; le gabarit
+générique de `assaisonnement.js` sert sinon (zéro ou plusieurs ingrédients absorbés, et
+toujours pour `assaisonnement_sel`). La décision se prend dans `genererEtapes`, jamais
+dans le composant d'affichage.
 
 **Fonctions pures.** Les quatre modules de `src/engine/` n'importent aucun JSON. Ils
 reçoivent `{ catalogue, structures }` en paramètre. C'est `App.jsx` qui fait les imports.

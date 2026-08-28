@@ -61,6 +61,8 @@ titre('Test 1 — poulet + oignon + courgette + citron');
   const iCourgette = posEtape(etapes, 'courgette');
   ok(iOignon >= 0 && iCourgette >= 0 && iOignon < iCourgette, 'l\'oignon est placé avant la courgette');
   ok(absorbe(etapes, 'citron')?.type === 'assaisonnement_acide', 'le citron est absorbé par l\'étape acide, hors du feu');
+  const citron = catalogue.find((i) => i.id === 'citron');
+  ok(absorbe(etapes, 'citron')?.signal === citron.signal, 'l\'étape acide porte le signal propre du citron, seul ingrédient absorbé');
   const evap = etapes.find((e) => e.type === 'evaporation');
   ok(!!evap && evap.texte.includes('courgette'), 'une étape d\'évaporation est déclenchée pour la courgette');
   ok(!etapes.some((e) => e.type === 'ingredient' && e.moment === 'cuisson' && e.ingredient_id === 'oignon'),

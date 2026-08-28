@@ -41,15 +41,20 @@ function etapeMarqueur(e, n) {
     case 'assaisonnement_acide':
     case 'assaisonnement_gras_croquant': {
       const m = MODELES[e.type];
+      const absorbes = e.ingredients || [];
+      // Signal propre de l'ingrédient quand un seul est absorbé (arbitrage Lot 2, point 2
+      // de questions-ouvertes.md) ; gabarit générique sinon, et toujours pour le sel.
+      const signalPropre =
+        e.type !== 'assaisonnement_sel' && absorbes.length === 1 ? absorbes[0] : null;
       return {
         ...base,
         id: `e${n}_${e.type}`,
         titre: m.titre,
         texte: m.texte(noms, !!e.depuis_socle),
-        signal: m.signal,
-        signal_long: m.signal_long,
+        signal: signalPropre ? signalPropre.signal : m.signal,
+        signal_long: signalPropre ? signalPropre.signal_long : m.signal_long,
         duree_indicative: m.duree_indicative,
-        ingredients_ids: (e.ingredients || []).map((i) => i.id),
+        ingredients_ids: absorbes.map((i) => i.id),
       };
     }
 
