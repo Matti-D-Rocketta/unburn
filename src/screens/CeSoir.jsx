@@ -8,6 +8,7 @@ export default function CeSoir({
   onChange,
   derniereSelection,
   onModifierGardeManger,
+  onVoirPropositions,
 }) {
   const disponibles = catalogue.filter((i) => gardeManger.includes(i.id));
   const dernierValide = derniereSelection.filter((id) => gardeManger.includes(id));
@@ -88,6 +89,15 @@ export default function CeSoir({
         {compte} / {MAX_SELECTION} sélectionné{compte > 1 ? 's' : ''}
         {valide ? ' — prêt' : ` — encore ${Math.max(0, MIN_SELECTION - compte)} au minimum`}
       </p>
+
+      <button
+        type="button"
+        onClick={onVoirPropositions}
+        disabled={!valide}
+        className="w-full min-h-[48px] px-6 py-3 mb-4 rounded-lg text-xl font-semibold bg-emerald-700 text-white disabled:bg-neutral-300 disabled:text-neutral-500"
+      >
+        Voir les propositions
+      </button>
 
       <button
         type="button"
