@@ -1,59 +1,54 @@
-# unburn
+# Unshelf
 
-Application de cuisine qui accompagne un débutant **pendant** qu'il cuisine.
+**Live app: [unshelf.netlify.app](https://unshelf.netlify.app/)** · [Version française ↓](#français)
 
-Elle décrit des signaux sensoriels observables — couleur, son, odeur, toucher — au lieu
-d'annoncer des durées. Elle travaille sur un garde-manger fermé de 30 ingrédients et
-génère des plats à partir de trois structures de cuisson, sans recettes.
+![Unshelf journey: pick tonight's ingredients, choose a dish, cook step by step](docs/screenshots/parcours.jpg)
 
-## État actuel — Lot 1 sur 3
+## English
 
-Ce dépôt ne contient pour l'instant que **les données et le moteur**. Il n'y a pas
-d'interface, pas de build, rien à lancer dans un navigateur.
+**What it does.** Unshelf is a cooking companion for beginners. You tick what you have at
+home, it suggests a dish and walks you through it step by step, right at the stove.
 
-| Lot | Contenu | État |
-|-----|---------|------|
-| 1 | Données JSON et moteur de génération | fait |
-| 2 | Interface React : 7 écrans, 4 composants, `App.jsx` | à faire |
-| 3 | PWA, `wakeLock`, journal, export | à faire |
+**How it works.**
+- **Dish families, not recipes.** Pick 3 to 6 ingredients for tonight. An engine matches
+  them against three cooking structures (pan-fry, sheet-pan roast, eggs on a base),
+  assigns each ingredient a role (fat, protein, aromatic, body, acid, finish) and orders
+  the steps: what takes longest goes in first, acid goes in off the heat.
+- **Sensory cues instead of timers.** Each step tells you when it's ready by what you
+  can see, hear or smell, and feel. Cooking times stay hidden behind a tap.
+  A "Not sure it's ready?" button explains what's going on.
 
-## Lancer les tests
-
-Node 18 minimum. Aucune dépendance à installer.
+**Stack.** React 18 · Vite 5 · Tailwind CSS 3.4 · plain JavaScript · `localStorage`.
+No backend, no account, no network calls. The generation engine is made of pure
+functions (`src/engine/`) driven by JSON data (`src/data/`), and checked with
+`node scripts/verifier.mjs`. Deployed on Netlify.
 
 ```bash
-node scripts/verifier.mjs
+npm install
+npm run dev                 # local app
+node scripts/verifier.mjs   # engine and data checks
 ```
 
-44 contrôles, dont les 4 tests d'acceptation de la spécification.
+The interface is in French.
 
-## Arborescence
+## Français
 
-```
-src/data/      ingredients.json    35 entrées : 30 sélectionnables, 4 de socle, 1 hors garde-manger
-               structures.json     3 structures génératives
-               principes.json      10 principes de cuisine
-               plats-fixes.json    le plat long à texte fixe
+**Ce que fait l'app.** Unshelf accompagne un débutant en cuisine. Tu coches ce que tu as
+chez toi, elle te propose un plat et te guide pas à pas, directement aux fourneaux.
 
-src/engine/    choisirStructure.js affectation aux slots, score, classement
-               ordonnancer.js      tri à deux niveaux : moment, puis rang fin dans la phase
-               genererEtapes.js    production des étapes et des marqueurs
-               assaisonnement.js   gabarits d'assaisonnement et table de rectification
+**Le principe.**
+- **Des familles de plats, pas des recettes.** Tu choisis 3 à 6 ingrédients pour ce soir.
+  Un moteur les confronte à trois structures de cuisson (poêlée, plaque au four, œufs sur
+  garniture), donne un rôle à chaque ingrédient (gras, protéine, aromatique, corps, acide,
+  finition) et ordonne les étapes : ce qui est long entre en premier, l'acide se met feu
+  coupé.
+- **Des repères sensoriels plutôt qu'un minuteur.** Chaque étape dit quand c'est prêt par
+  ce qu'on voit, ce qu'on entend ou sent, et ce qu'on touche. La durée reste masquée
+  derrière un tap. Un bouton « Je ne sais pas si c'est prêt » explique ce qui se passe.
 
-scripts/       verifier.mjs        tests d'acceptation et contrôles de cohérence
-```
+**Stack.** React 18 · Vite 5 · Tailwind CSS 3.4 · JavaScript · `localStorage`.
+Pas de backend, pas de compte, aucun appel réseau. Le moteur de génération est fait de
+fonctions pures (`src/engine/`) alimentées par des données JSON (`src/data/`), et vérifié
+par `node scripts/verifier.mjs`. Déployé sur Netlify.
 
-Les quatre fonctions du moteur sont pures et reçoivent `{ catalogue, structures }` en
-paramètre. Aucun import de JSON dans `src/engine/`.
-
-## Contenu rédactionnel
-
-Les 140 champs `signal` et `signal_long` du catalogue sont préfixés `BROUILLON — `.
-Ce sont des marqueurs de position, à réécrire intégralement. Ils constituent la valeur
-du produit.
-
-## Contraintes
-
-Pas de backend, pas de comptes, aucun appel réseau, aucun appel à un LLM.
-React 18, Vite, Tailwind, `localStorage`. Fonctionnement hors ligne intégral.
-Aucune durée affichée comme information principale d'une étape.
+**Lien :** [unshelf.netlify.app](https://unshelf.netlify.app/)
