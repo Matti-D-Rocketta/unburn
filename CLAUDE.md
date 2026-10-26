@@ -30,12 +30,14 @@ bibliothèque de composants.
 
 ## Règle de contenu — la plus importante
 
-Tous les champs `signal` et `signal_long` sont préfixés `BROUILLON — `.
-**Ne les réécris jamais.** Ce sont des marqueurs de position réservés au propriétaire du
-projet : ils constituent la valeur du produit et ne peuvent pas venir d'un modèle.
+Les champs `signal` et `signal_long` sont rédigés et publiés : le préfixe `BROUILLON — `
+a été retiré à la demande du propriétaire, et `verifier.mjs` refuse désormais tout
+marqueur de brouillon. Ils constituent la valeur du produit : **ne les modifie pas sans
+instruction explicite du propriétaire.**
 
-Si tu crées un nouveau champ de signal, préfixe-le `BROUILLON — ` et respecte le gabarit
-à trois modalités : **vue**, **son ou odeur**, **toucher**. Jamais une durée seule.
+Tout nouveau champ de signal respecte le gabarit à trois modalités : **vue**, **son ou
+odeur**, **toucher**. Jamais une durée seule. Chaque ingrédient porte un `nom_defini`
+(nom avec article) utilisé par le moteur pour écrire des phrases complètes.
 
 N'invente aucune règle culinaire absente de la spécification. Signale-la comme un manque.
 
@@ -44,7 +46,7 @@ N'invente aucune règle culinaire absente de la spécification. Signale-la comme
 | Lot | Contenu | État |
 |-----|---------|------|
 | 1 | Données JSON et moteur | **fait**, `node scripts/verifier.mjs` au vert |
-| 2 | 7 écrans, 4 composants, `App.jsx` | à faire |
+| 2 | Écrans, composants, `App.jsx` | **fait**, déployé sur https://unshelf.netlify.app/ |
 | 3 | PWA, service worker, `wakeLock`, journal, export, README complet | à faire |
 
 **Arrête-toi à la fin de chaque lot et attends validation.** N'anticipe pas sur le lot
