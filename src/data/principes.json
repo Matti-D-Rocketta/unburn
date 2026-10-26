@@ -2,61 +2,61 @@
   {
     "id": "ordre_par_temps",
     "titre": "Ce qui est long entre en premier",
-    "texte": "BROUILLON — Tout ce qui est dans la poêle en sort en même temps.\nCe qui met quinze minutes entre quinze minutes avant la fin.\nL'ordre n'est pas une recette, c'est une soustraction.",
+    "texte": "Tout ce qui est dans la poêle en sort en même temps.\nCe qui met quinze minutes entre quinze minutes avant la fin.\nL'ordre n'est pas une recette, c'est une soustraction.",
     "declencheurs": ["structure:poelee", "structure:plaque"]
   },
   {
     "id": "acide_hors_du_feu",
     "titre": "L'acide se met feu coupé",
-    "texte": "BROUILLON — La chaleur détruit ce qui rend un acide vivant.\nJus, vinaigre, yaourt : après le feu, jamais pendant.\nUn plat plat n'a presque jamais besoin de sel, il manque d'acide.",
+    "texte": "La chaleur détruit ce qui rend un acide vivant.\nJus, vinaigre, yaourt : après le feu, jamais pendant.\nUn plat plat n'a presque jamais besoin de sel, il manque d'acide.",
     "declencheurs": ["role:acide"]
   },
   {
     "id": "eau_avant_couleur",
     "titre": "Rien ne dore tant qu'il reste de l'eau",
-    "texte": "BROUILLON — Un légume qui rend son eau bout, il ne rôtit pas.\nLe bruit change quand l'eau est partie : d'un bouillonnement sourd à un grésillement clair.\nC'est ce changement de son qui donne le départ de la coloration.",
+    "texte": "Un légume qui rend son eau bout, il ne rôtit pas.\nLe bruit change quand l'eau est partie : d'un bouillonnement sourd à un grésillement clair.\nC'est ce changement de son qui donne le départ de la coloration.",
     "declencheurs": ["eau:rend", "structure:poelee"]
   },
   {
     "id": "marquer_puis_retirer",
     "titre": "Marquer, retirer, remettre",
-    "texte": "BROUILLON — La viande a besoin d'une poêle très chaude et le légume d'une poêle moyenne.\nOn ne peut pas avoir les deux en même temps.\nOn marque, on sort, on cuit le reste, on remet à la fin.",
+    "texte": "La viande a besoin d'une poêle très chaude et le légume d'une poêle moyenne.\nOn ne peut pas avoir les deux en même temps.\nOn marque, on sort, on cuit le reste, on remet à la fin.",
     "declencheurs": ["role:proteine", "structure:poelee"]
   },
   {
     "id": "poele_non_surchargee",
     "titre": "Une poêle pleine bout",
-    "texte": "BROUILLON — Trop d'ingrédients d'un coup fait chuter la température.\nLa vapeur ne s'échappe plus et remplace la coloration.\nDeux fournées valent mieux qu'une, deux plaques aussi.",
+    "texte": "Trop d'ingrédients d'un coup fait chuter la température.\nLa vapeur ne s'échappe plus et remplace la coloration.\nDeux fournées valent mieux qu'une, deux plaques aussi.",
     "declencheurs": ["structure:plaque", "structure:poelee"]
   },
   {
     "id": "herbes_dures_et_tendres",
     "titre": "Deux herbes, deux moments",
-    "texte": "BROUILLON — Une herbe dure — thym, laurier, romarin — a besoin de chaleur et de liquide pour donner quelque chose.\nUne herbe tendre — persil, basilic, coriandre — perd tout en trente secondes de cuisson.\nLa première entre tôt, la seconde après le feu.",
+    "texte": "Une herbe dure — thym, laurier, romarin — a besoin de chaleur et de liquide pour donner quelque chose.\nUne herbe tendre — persil, basilic, coriandre — perd tout en trente secondes de cuisson.\nLa première entre tôt, la seconde après le feu.",
     "declencheurs": ["type_herbe:dure", "type_herbe:tendre"]
   },
   {
     "id": "epices_brulent",
     "titre": "Une épice moulue brûle vite",
-    "texte": "BROUILLON — Une épice entière supporte le gras chaud, une épice moulue non.\nAil, paprika, concentré de tomate : quelques secondes, pas plus.\nQuand l'odeur devient âcre, c'est déjà passé.",
+    "texte": "Une épice entière supporte le gras chaud, une épice moulue non.\nAil, paprika, concentré de tomate : quelques secondes, pas plus.\nQuand l'odeur devient âcre, c'est déjà passé.",
     "declencheurs": ["role:roussissement_court"]
   },
   {
     "id": "agent_de_brunissement",
     "titre": "Un plat sans brunissement est fade",
-    "texte": "BROUILLON — Le goût profond vient d'une réaction de coloration, pas d'un assaisonnement.\nSans viande à marquer, il faut un autre agent : oignon poussé, champignons, concentré de tomate.\nAucun sel ne rattrape une poêlée qui n'a jamais coloré.",
+    "texte": "Le goût profond vient d'une réaction de coloration, pas d'un assaisonnement.\nSans viande à marquer, il faut un autre agent : oignon poussé, champignons, concentré de tomate.\nAucun sel ne rattrape une poêlée qui n'a jamais coloré.",
     "declencheurs": ["agent_brunissement:absent"]
   },
   {
     "id": "sel_par_couches",
     "titre": "Saler à chaque couche",
-    "texte": "BROUILLON — Le sel ajouté à la fin reste en surface.\nUne pincée à chaque ajout assaisonne l'ingrédient lui-même.\nMême quantité totale, résultat différent.",
+    "texte": "Le sel ajouté à la fin reste en surface.\nUne pincée à chaque ajout assaisonne l'ingrédient lui-même.\nMême quantité totale, résultat différent.",
     "declencheurs": ["structure:poelee", "structure:plaque", "structure:oeufs"]
   },
   {
     "id": "parallelisme_feculent",
     "titre": "L'eau part avant tout le reste",
-    "texte": "BROUILLON — La casserole d'eau est la seule chose qui ne peut pas être accélérée.\nElle se lance avant de sortir le couteau.\nC'est ce qui décide de l'heure du dîner, pas la poêle.",
+    "texte": "La casserole d'eau est la seule chose qui ne peut pas être accélérée.\nElle se lance avant de sortir le couteau.\nC'est ce qui décide de l'heure du dîner, pas la poêle.",
     "declencheurs": ["feculent_parallele:true"]
   }
 ]

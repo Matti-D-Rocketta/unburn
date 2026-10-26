@@ -155,7 +155,9 @@ titre('Contrôles de cohérence des données');
   ok(catalogue.filter((i) => i.base).length === 4, 'socle de 4 ingrédients');
 
   const champsSignal = catalogue.flatMap((i) => [i.signal.vue, i.signal.son_odeur, i.signal.toucher, i.signal_long]);
-  ok(champsSignal.every((t) => t.startsWith('BROUILLON — ')), `tous les signaux sont préfixés BROUILLON (${champsSignal.length} champs)`);
+  const brouillon = /BROUILLON|texte long|à décrire|à rédiger|lorem|TODO|TBD/i;
+  ok(champsSignal.every((t) => t && !brouillon.test(t)), `aucun signal ne contient de marqueur de brouillon (${champsSignal.length} champs)`);
+  ok(catalogue.every((i) => typeof i.nom_defini === 'string' && i.nom_defini.length > 0), 'chaque ingrédient porte son nom avec article (nom_defini)');
 
   const vocab = {
     temps_cuisson: ['court', 'moyen', 'long'],

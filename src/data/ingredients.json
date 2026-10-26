@@ -2,6 +2,7 @@
   {
     "id": "huile_olive",
     "nom": "Huile d'olive",
+    "nom_defini": "l'huile d'olive",
     "rayon": "epicerie",
     "nutrition": ["matiere_grasse"],
     "roles": ["gras", "finition"],
@@ -20,11 +21,11 @@
     "selectionnable": false,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la surface se lisse et devient mobile, elle glisse d'un bord à l'autre quand on incline",
-      "son_odeur": "BROUILLON — l'ingrédient posé dedans grésille immédiatement, sans silence de deux secondes",
-      "toucher": "BROUILLON — la main à vingt centimètres au-dessus sent une chaleur nette"
+      "vue": "la surface se lisse et devient mobile, elle glisse d'un bord à l'autre quand on incline",
+      "son_odeur": "l'ingrédient posé dedans grésille immédiatement, sans silence de deux secondes",
+      "toucher": "la main à vingt centimètres au-dessus sent une chaleur nette"
     },
-    "signal_long": "BROUILLON — texte long : comment distinguer une huile chaude d'une huile fumante, et pourquoi la fumée est déjà trop tard.",
+    "signal_long": "Une huile chaude ondule et coule librement, sans fumer. Dès qu'une fumée apparaît, il est déjà trop tard : l'huile commence à brûler et donne de l'amertume.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["ail", "citron", "thym"],
@@ -33,6 +34,7 @@
   {
     "id": "sel_fin",
     "nom": "Sel fin",
+    "nom_defini": "le sel fin",
     "rayon": "condiments",
     "nutrition": [],
     "roles": [],
@@ -51,11 +53,11 @@
     "selectionnable": false,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les légumes rendent leur eau plus vite et brillent",
-      "son_odeur": "BROUILLON — le grésillement se charge, l'odeur monte franchement",
-      "toucher": "BROUILLON — goûter : la saveur doit arriver devant, pas après"
+      "vue": "les légumes rendent leur eau plus vite et brillent",
+      "son_odeur": "le grésillement se charge, l'odeur monte franchement",
+      "toucher": "goûter : la saveur doit arriver devant, pas après"
     },
-    "signal_long": "BROUILLON — texte long : saler à chaque couche plutôt qu'une fois à la fin, et pourquoi.",
+    "signal_long": "Sale un peu à chaque ajout plutôt qu'une seule fois à la fin : chaque ingrédient est alors assaisonné. Le sel ajouté à la fin reste en surface.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": [],
@@ -64,6 +66,7 @@
   {
     "id": "poivre_noir",
     "nom": "Poivre noir",
+    "nom_defini": "le poivre noir",
     "rayon": "condiments",
     "nutrition": [],
     "roles": [],
@@ -82,11 +85,11 @@
     "selectionnable": false,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les grains fraîchement moulus sont irréguliers, pas gris uniforme",
-      "son_odeur": "BROUILLON — l'odeur pique le nez au moment de la mouture, pas avant",
-      "toucher": "BROUILLON — sous les doigts, la mouture accroche au lieu de couler"
+      "vue": "les grains fraîchement moulus sont irréguliers, pas gris uniforme",
+      "son_odeur": "l'odeur pique le nez au moment de la mouture, pas avant",
+      "toucher": "sous les doigts, la mouture accroche au lieu de couler"
     },
-    "signal_long": "BROUILLON — texte long : pourquoi le poivre se met hors du feu ou en toute fin.",
+    "signal_long": "Le poivre se met hors du feu ou en toute fin : chauffé longtemps, il perd son parfum et devient âcre.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": [],
@@ -95,6 +98,7 @@
   {
     "id": "vinaigre_cidre",
     "nom": "Vinaigre de cidre",
+    "nom_defini": "le vinaigre de cidre",
     "rayon": "condiments",
     "nutrition": [],
     "roles": ["acide"],
@@ -113,11 +117,11 @@
     "selectionnable": false,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — au contact de la poêle chaude hors du feu, un voile de vapeur part et disparaît",
-      "son_odeur": "BROUILLON — l'odeur pique une seconde puis retombe ; si elle pique encore, il y en a trop",
-      "toucher": "BROUILLON — goûter : la bouche se réveille sur les côtés de la langue"
+      "vue": "au contact de la poêle chaude hors du feu, un voile de vapeur part et disparaît",
+      "son_odeur": "l'odeur pique une seconde puis retombe ; si elle pique encore, il y en a trop",
+      "toucher": "goûter : la bouche se réveille sur les côtés de la langue"
     },
-    "signal_long": "BROUILLON — texte long : l'acide se met hors du feu, pourquoi la cuisson le détruit.",
+    "signal_long": "L'acide se met hors du feu : la cuisson détruit ce qui le rend vif et n'en laisse que l'aigreur.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["moutarde", "huile_olive"],
@@ -127,6 +131,7 @@
   {
     "id": "oignon",
     "nom": "Oignon",
+    "nom_defini": "l'oignon",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["aromatique"],
@@ -145,11 +150,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — translucide et brillant, les bords commencent à blondir",
-      "son_odeur": "BROUILLON — le grésillement s'adoucit, l'odeur piquante laisse place à une odeur sucrée",
-      "toucher": "BROUILLON — la spatule traverse sans résistance"
+      "vue": "translucide et brillant, les bords commencent à blondir",
+      "son_odeur": "le grésillement s'adoucit, l'odeur piquante laisse place à une odeur sucrée",
+      "toucher": "la spatule traverse sans résistance"
     },
-    "signal_long": "BROUILLON — texte long : oignon translucide contre oignon coloré, deux plats différents.",
+    "signal_long": "Un oignon translucide reste doux et discret ; un oignon coloré apporte un goût sucré et grillé. Ce sont deux plats différents.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["ail", "thym", "carotte"],
@@ -158,6 +163,7 @@
   {
     "id": "ail",
     "nom": "Ail",
+    "nom_defini": "l'ail",
     "rayon": "legumes",
     "nutrition": [],
     "roles": ["aromatique", "roussissement_court"],
@@ -176,11 +182,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les morceaux passent du blanc mat au blanc nacré, aucun bord ne brunit",
-      "son_odeur": "BROUILLON — l'odeur devient ronde ; dès qu'elle devient âcre, c'est brûlé",
-      "toucher": "BROUILLON — la spatule ne rencontre plus de croquant"
+      "vue": "les morceaux passent du blanc mat au blanc nacré, aucun bord ne brunit",
+      "son_odeur": "l'odeur devient ronde ; dès qu'elle devient âcre, c'est brûlé",
+      "toucher": "la spatule ne rencontre plus de croquant"
     },
-    "signal_long": "BROUILLON — texte long : pourquoi l'ail entre après l'oignon et jamais dans une poêle vide et brûlante.",
+    "signal_long": "L'ail brûle en quelques secondes et devient amer. C'est pour ça qu'il entre après l'oignon, jamais seul dans une poêle vide et brûlante.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["oignon", "persil_plat", "citron"],
@@ -189,6 +195,7 @@
   {
     "id": "carotte",
     "nom": "Carotte",
+    "nom_defini": "la carotte",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps", "finition"],
@@ -207,11 +214,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les arêtes s'arrondissent et la couleur fonce d'un ton",
-      "son_odeur": "BROUILLON — le grésillement se creuse, une odeur sucrée apparaît",
-      "toucher": "BROUILLON — la pointe du couteau entre avec une légère résistance, elle ne tombe pas"
+      "vue": "les arêtes s'arrondissent et la couleur fonce d'un ton",
+      "son_odeur": "le grésillement se creuse, une odeur sucrée apparaît",
+      "toucher": "la pointe du couteau entre avec une légère résistance, elle ne tombe pas"
     },
-    "signal_long": "BROUILLON — texte long : la carotte cuite et la carotte crue râpée sont deux ingrédients différents.",
+    "signal_long": "Cuite, la carotte devient douce et sucrée ; râpée crue, elle apporte du croquant et de la fraîcheur. Ce sont deux ingrédients différents.",
     "video": null,
     "structures": ["poelee", "plaque"],
     "affinites": ["oignon", "thym", "graines_cumin"],
@@ -220,6 +227,7 @@
   {
     "id": "courgette",
     "nom": "Courgette",
+    "nom_defini": "la courgette",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps"],
@@ -238,11 +246,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le fond de la poêle est sec et les faces posées sont tachées d'or",
-      "son_odeur": "BROUILLON — le bruit passe du bouillonnement sourd au grésillement clair",
-      "toucher": "BROUILLON — la spatule décolle la tranche d'un bloc, sans qu'elle se défasse"
+      "vue": "le fond de la poêle est sec et les faces posées sont tachées d'or",
+      "son_odeur": "le bruit passe du bouillonnement sourd au grésillement clair",
+      "toucher": "la spatule décolle la tranche d'un bloc, sans qu'elle se défasse"
     },
-    "signal_long": "BROUILLON — texte long : la courgette rend son eau avant de dorer, il faut attendre le retour du grésillement.",
+    "signal_long": "La courgette rend d'abord son eau, et tant qu'elle bout, elle ne dore pas. Attends le retour du grésillement avant de chercher la couleur.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["ail", "thym", "citron"],
@@ -251,6 +259,7 @@
   {
     "id": "poivron_rouge",
     "nom": "Poivron rouge",
+    "nom_defini": "le poivron rouge",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps"],
@@ -269,11 +278,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la peau se plisse par endroits et quelques taches brunes apparaissent",
-      "son_odeur": "BROUILLON — l'odeur devient sucrée et légèrement fumée",
-      "toucher": "BROUILLON — la lanière plie quand on la soulève au lieu de rester droite"
+      "vue": "la peau se plisse par endroits et quelques taches brunes apparaissent",
+      "son_odeur": "l'odeur devient sucrée et légèrement fumée",
+      "toucher": "la lanière plie quand on la soulève au lieu de rester droite"
     },
-    "signal_long": "BROUILLON — texte long : poivron fondant contre poivron encore ferme, choisir avant de couper.",
+    "signal_long": "Un poivron fondant et un poivron encore ferme ne donnent pas le même plat : choisis la texture voulue avant de couper.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["oignon", "paprika_fume", "oeufs"],
@@ -282,6 +291,7 @@
   {
     "id": "champignons_paris",
     "nom": "Champignons de Paris",
+    "nom_defini": "les champignons de Paris",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps"],
@@ -300,11 +310,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — l'eau rendue a disparu du fond, les faces posées prennent une couleur noisette",
-      "son_odeur": "BROUILLON — le bruit d'eau cesse et laisse place à un grésillement sec, l'odeur devient de noisette",
-      "toucher": "BROUILLON — le champignon a réduit de moitié, il résiste sous la spatule"
+      "vue": "l'eau rendue a disparu du fond, les faces posées prennent une couleur noisette",
+      "son_odeur": "le bruit d'eau cesse et laisse place à un grésillement sec, l'odeur devient de noisette",
+      "toucher": "le champignon a réduit de moitié, il résiste sous la spatule"
     },
-    "signal_long": "BROUILLON — texte long : les champignons bouillent avant de dorer, ne pas remuer pendant cette phase.",
+    "signal_long": "Les champignons bouillent dans leur eau avant de dorer. Ne les remue pas pendant cette phase : la couleur vient une fois l'eau partie.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["ail", "thym", "persil_plat"],
@@ -313,6 +323,7 @@
   {
     "id": "pomme_terre",
     "nom": "Pomme de terre",
+    "nom_defini": "la pomme de terre",
     "rayon": "legumes",
     "nutrition": ["feculents"],
     "roles": ["corps"],
@@ -331,11 +342,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la face en contact est dorée et l'arête est nette, pas effritée",
-      "son_odeur": "BROUILLON — le grésillement est régulier, une odeur de pain grillé apparaît",
-      "toucher": "BROUILLON — la pointe du couteau entre jusqu'au centre sans forcer et ressort seule"
+      "vue": "la face en contact est dorée et l'arête est nette, pas effritée",
+      "son_odeur": "le grésillement est régulier, une odeur de pain grillé apparaît",
+      "toucher": "la pointe du couteau entre jusqu'au centre sans forcer et ressort seule"
     },
-    "signal_long": "BROUILLON — texte long : cuit à cœur et doré dehors sont deux signaux distincts, il faut les deux.",
+    "signal_long": "Cuite à cœur et dorée dehors sont deux signaux distincts : il faut les deux. Vérifie la couleur, puis la pointe du couteau.",
     "video": null,
     "structures": ["poelee", "plaque"],
     "affinites": ["thym", "ail", "paprika_fume"],
@@ -344,6 +355,7 @@
   {
     "id": "chou_fleur",
     "nom": "Chou-fleur",
+    "nom_defini": "le chou-fleur",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps"],
@@ -362,11 +374,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les pointes des bouquets sont brun foncé, presque noires par endroits",
-      "son_odeur": "BROUILLON — l'odeur de chou disparaît et devient une odeur de noisette grillée",
-      "toucher": "BROUILLON — la tige cède sous la pointe, la fleur reste ferme"
+      "vue": "les pointes des bouquets sont brun foncé, presque noires par endroits",
+      "son_odeur": "l'odeur de chou disparaît et devient une odeur de noisette grillée",
+      "toucher": "la tige cède sous la pointe, la fleur reste ferme"
     },
-    "signal_long": "BROUILLON — texte long : le chou-fleur ne devient bon qu'après le point où on croit qu'il est brûlé.",
+    "signal_long": "Le chou-fleur ne devient vraiment bon qu'après le point où l'on croit qu'il brûle : les pointes doivent être brun foncé.",
     "video": null,
     "structures": ["poelee", "plaque"],
     "affinites": ["graines_cumin", "citron", "amandes_effilees"],
@@ -375,6 +387,7 @@
   {
     "id": "epinards_frais",
     "nom": "Épinards frais",
+    "nom_defini": "les épinards frais",
     "rayon": "legumes",
     "nutrition": ["fibres"],
     "roles": ["corps"],
@@ -393,11 +406,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le volume s'effondre d'un coup, la couleur devient vert foncé et brillante",
-      "son_odeur": "BROUILLON — un sifflement bref à l'arrivée, puis presque plus rien",
-      "toucher": "BROUILLON — la spatule rassemble la masse en un tas qui tient"
+      "vue": "le volume s'effondre d'un coup, la couleur devient vert foncé et brillante",
+      "son_odeur": "un sifflement bref à l'arrivée, puis presque plus rien",
+      "toucher": "la spatule rassemble la masse en un tas qui tient"
     },
-    "signal_long": "BROUILLON — texte long : les épinards entrent en dernier, la chaleur résiduelle suffit à finir.",
+    "signal_long": "Les épinards entrent en dernier : la chaleur résiduelle suffit à finir leur cuisson.",
     "video": null,
     "structures": ["poelee", "oeufs"],
     "affinites": ["ail", "citron", "feta"],
@@ -406,6 +419,7 @@
   {
     "id": "citron",
     "nom": "Citron",
+    "nom_defini": "le citron",
     "rayon": "legumes",
     "nutrition": [],
     "roles": ["acide", "finition"],
@@ -424,11 +438,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le jus disparaît en quelques secondes dans la préparation, il ne stagne pas",
-      "son_odeur": "BROUILLON — l'odeur du plat se redresse d'un cran au moment où le jus tombe",
-      "toucher": "BROUILLON — goûter : le plat paraît plus salé sans avoir ajouté de sel"
+      "vue": "le jus disparaît en quelques secondes dans la préparation, il ne stagne pas",
+      "son_odeur": "l'odeur du plat se redresse d'un cran au moment où le jus tombe",
+      "toucher": "goûter : le plat paraît plus salé sans avoir ajouté de sel"
     },
-    "signal_long": "BROUILLON — texte long : jus et zeste ne font pas le même travail, et pourquoi le feu doit être coupé.",
+    "signal_long": "Le zeste apporte le parfum, le jus apporte l'acidité. Les deux se mettent feu coupé : la chaleur fait disparaître la fraîcheur du citron.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["persil_plat", "huile_olive", "ail"],
@@ -438,6 +452,7 @@
   {
     "id": "oeufs",
     "nom": "Œufs",
+    "nom_defini": "les œufs",
     "rayon": "frais",
     "nutrition": ["proteines"],
     "roles": ["proteine", "liant"],
@@ -456,11 +471,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le blanc est opaque partout, le jaune bombe encore et brille",
-      "son_odeur": "BROUILLON — presque aucun bruit ; si ça grésille fort, le feu est trop vif",
-      "toucher": "BROUILLON — la poêle inclinée, rien ne coule ; le jaune tremble sous la spatule"
+      "vue": "le blanc est opaque partout, le jaune bombe encore et brille",
+      "son_odeur": "presque aucun bruit ; si ça grésille fort, le feu est trop vif",
+      "toucher": "la poêle inclinée, rien ne coule ; le jaune tremble sous la spatule"
     },
-    "signal_long": "BROUILLON — texte long : retirer la poêle avant que ce soit pris, la cuisson continue hors du feu.",
+    "signal_long": "Retire la poêle du feu juste avant que les œufs soient pris : la cuisson continue hors du feu.",
     "video": null,
     "structures": ["oeufs"],
     "affinites": ["persil_plat", "feta", "poivron_rouge"],
@@ -469,6 +484,7 @@
   {
     "id": "beurre",
     "nom": "Beurre",
+    "nom_defini": "le beurre",
     "rayon": "frais",
     "nutrition": ["matiere_grasse"],
     "roles": ["gras", "finition"],
@@ -487,11 +503,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la mousse blanche monte puis retombe, le fond devient couleur noisette",
-      "son_odeur": "BROUILLON — le crépitement fin s'arrête, l'odeur devient de noisette",
-      "toucher": "BROUILLON — la poêle inclinée, le beurre coule comme de l'huile"
+      "vue": "la mousse blanche monte puis retombe, le fond devient couleur noisette",
+      "son_odeur": "le crépitement fin s'arrête, l'odeur devient de noisette",
+      "toucher": "la poêle inclinée, le beurre coule comme de l'huile"
     },
-    "signal_long": "BROUILLON — texte long : le beurre a une fenêtre courte entre mousse retombée et brûlé.",
+    "signal_long": "Le beurre passe très vite de la mousse retombée au brûlé. Dès que l'odeur de noisette arrive, passe à la suite.",
     "video": null,
     "structures": ["poelee", "oeufs"],
     "affinites": ["oeufs", "champignons_paris", "persil_plat"],
@@ -500,6 +516,7 @@
   {
     "id": "yaourt_grec",
     "nom": "Yaourt grec",
+    "nom_defini": "le yaourt grec",
     "rayon": "frais",
     "nutrition": ["proteines"],
     "roles": ["liant", "finition"],
@@ -518,11 +535,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — il garde sa forme quelques secondes puis se fond dans le plat sans grainer",
-      "son_odeur": "BROUILLON — aucune odeur nouvelle ; s'il chauffe, une odeur aigre apparaît",
-      "toucher": "BROUILLON — goûter : la bouche est rafraîchie, pas alourdie"
+      "vue": "il garde sa forme quelques secondes puis se fond dans le plat sans grainer",
+      "son_odeur": "aucune odeur nouvelle ; s'il chauffe, une odeur aigre apparaît",
+      "toucher": "goûter : la bouche est rafraîchie, pas alourdie"
     },
-    "signal_long": "BROUILLON — texte long : le yaourt tranche s'il touche le feu, il se met hors du feu.",
+    "signal_long": "Le yaourt tranche et forme des grumeaux s'il touche le feu : il se met toujours hors du feu.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["graines_cumin", "citron", "epinards_frais"],
@@ -531,6 +548,7 @@
   {
     "id": "feta",
     "nom": "Feta",
+    "nom_defini": "la feta",
     "rayon": "frais",
     "nutrition": ["proteines"],
     "roles": ["finition"],
@@ -549,11 +567,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les morceaux gardent leurs arêtes, ils ne fondent pas",
-      "son_odeur": "BROUILLON — aucune, c'est le signe qu'elle est arrivée assez tard",
-      "toucher": "BROUILLON — goûter : le sel de la feta doit s'ajouter au plat, pas s'y substituer"
+      "vue": "les morceaux gardent leurs arêtes, ils ne fondent pas",
+      "son_odeur": "aucune, c'est le signe qu'elle est arrivée assez tard",
+      "toucher": "goûter : le sel de la feta doit s'ajouter au plat, pas s'y substituer"
     },
-    "signal_long": "BROUILLON — texte long : la feta sale le plat, il faut donc saler moins en amont.",
+    "signal_long": "La feta est salée et sale le plat à ta place : sale moins en amont.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["epinards_frais", "courgette", "citron"],
@@ -563,6 +581,7 @@
   {
     "id": "poulet_haut_cuisse",
     "nom": "Haut de cuisse de poulet",
+    "nom_defini": "les hauts de cuisse de poulet",
     "rayon": "boucherie",
     "nutrition": ["proteines"],
     "roles": ["proteine"],
@@ -581,11 +600,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la face posée est brun doré uniforme, pas grise",
-      "son_odeur": "BROUILLON — le grésillement est fort et régulier, l'odeur devient rôtie",
-      "toucher": "BROUILLON — le morceau se décolle seul quand on le pousse ; s'il colle, il n'est pas prêt"
+      "vue": "la face posée est brun doré uniforme, pas grise",
+      "son_odeur": "le grésillement est fort et régulier, l'odeur devient rôtie",
+      "toucher": "le morceau se décolle seul quand on le pousse ; s'il colle, il n'est pas prêt"
     },
-    "signal_long": "BROUILLON — texte long : marquer puis retirer, et pourquoi on ne cuit pas la viande à cœur dans la même passe.",
+    "signal_long": "La viande a besoin d'une poêle très chaude, les légumes d'une poêle moyenne : on ne peut pas avoir les deux à la fois. On marque la viande, on la retire, et elle finit de cuire quand on la remet.",
     "video": null,
     "structures": ["poelee", "plaque"],
     "affinites": ["citron", "thym", "paprika_fume"],
@@ -594,6 +613,7 @@
   {
     "id": "lardons_fumes",
     "nom": "Lardons fumés",
+    "nom_defini": "les lardons fumés",
     "rayon": "boucherie",
     "nutrition": ["proteines", "matiere_grasse"],
     "roles": ["gras", "proteine"],
@@ -612,11 +632,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le gras est devenu translucide et une flaque claire s'est formée au fond",
-      "son_odeur": "BROUILLON — le bruit d'eau cesse, le grésillement devient sec et l'odeur fumée sort",
-      "toucher": "BROUILLON — le lardon résiste sous la spatule au lieu de se plier"
+      "vue": "le gras est devenu translucide et une flaque claire s'est formée au fond",
+      "son_odeur": "le bruit d'eau cesse, le grésillement devient sec et l'odeur fumée sort",
+      "toucher": "le lardon résiste sous la spatule au lieu de se plier"
     },
-    "signal_long": "BROUILLON — texte long : les lardons fournissent le gras du plat, ils partent d'une poêle froide et sans huile.",
+    "signal_long": "Les lardons fournissent le gras du plat. Ils partent d'une poêle froide et sans huile : leur gras fond doucement avant qu'ils dorent.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["champignons_paris", "oignon", "epinards_frais"],
@@ -625,6 +645,7 @@
   {
     "id": "steak_hache",
     "nom": "Steak haché",
+    "nom_defini": "le steak haché",
     "rayon": "boucherie",
     "nutrition": ["proteines"],
     "roles": ["proteine"],
@@ -643,11 +664,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — une croûte brune s'est formée sur la face posée, le reste est encore rosé",
-      "son_odeur": "BROUILLON — grésillement franc ; un bruit d'eau signifie que la poêle est trop chargée",
-      "toucher": "BROUILLON — la spatule racle une croûte qui accroche, pas une bouillie"
+      "vue": "une croûte brune s'est formée sur la face posée, le reste est encore rosé",
+      "son_odeur": "grésillement franc ; un bruit d'eau signifie que la poêle est trop chargée",
+      "toucher": "la spatule racle une croûte qui accroche, pas une bouillie"
     },
-    "signal_long": "BROUILLON — texte long : ne pas remuer pendant la formation de la croûte, c'est le seul moment qui compte.",
+    "signal_long": "Ne remue pas pendant que la croûte se forme : c'est le seul moment qui compte pour le goût.",
     "video": null,
     "structures": ["poelee"],
     "affinites": ["oignon", "concentre_tomate", "paprika_fume"],
@@ -656,6 +677,7 @@
   {
     "id": "echine_porc",
     "nom": "Échine de porc",
+    "nom_defini": "l'échine de porc",
     "rayon": "boucherie",
     "nutrition": ["proteines"],
     "roles": ["proteine"],
@@ -674,11 +696,11 @@
     "selectionnable": false,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la surface est brun foncé et la graisse s'est rétractée en dessinant le muscle",
-      "son_odeur": "BROUILLON — l'odeur de rôti remplit la cuisine et la graisse crépite doucement au fond",
-      "toucher": "BROUILLON — la fourchette plantée tourne sur elle-même sans effort"
+      "vue": "la surface est brun foncé et la graisse s'est rétractée en dessinant le muscle",
+      "son_odeur": "l'odeur de rôti remplit la cuisine et la graisse crépite doucement au fond",
+      "toucher": "la fourchette plantée tourne sur elle-même sans effort"
     },
-    "signal_long": "BROUILLON — texte long : la viande qui cède, seul signal fiable d'une cuisson longue.",
+    "signal_long": "La viande qui cède sous la fourchette est le seul signal fiable d'une cuisson longue.",
     "video": null,
     "structures": [],
     "affinites": ["thym", "ail", "oignon"],
@@ -688,6 +710,7 @@
   {
     "id": "pois_chiches",
     "nom": "Pois chiches en conserve",
+    "nom_defini": "les pois chiches",
     "rayon": "conserves",
     "nutrition": ["legumineuses", "proteines"],
     "roles": ["corps"],
@@ -706,11 +729,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la peau se tend et quelques pois se fendillent, des taches dorées apparaissent",
-      "son_odeur": "BROUILLON — un crépitement sec s'installe, l'odeur devient de farine grillée",
-      "toucher": "BROUILLON — le pois écrasé à la spatule s'ouvre au lieu de s'aplatir"
+      "vue": "la peau se tend et quelques pois se fendillent, des taches dorées apparaissent",
+      "son_odeur": "un crépitement sec s'installe, l'odeur devient de farine grillée",
+      "toucher": "le pois écrasé à la spatule s'ouvre au lieu de s'aplatir"
     },
-    "signal_long": "BROUILLON — texte long : les pois chiches doivent être secs avant d'entrer, sinon ils bouillent.",
+    "signal_long": "Les pois chiches doivent être bien secs avant d'entrer dans la poêle : humides, ils bouillent au lieu de griller.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["graines_cumin", "epinards_frais", "citron"],
@@ -719,6 +742,7 @@
   {
     "id": "tomates_concassees",
     "nom": "Tomates concassées",
+    "nom_defini": "les tomates concassées",
     "rayon": "conserves",
     "nutrition": [],
     "roles": ["corps", "liquide"],
@@ -737,11 +761,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la sauce ne bouge plus comme de l'eau, la spatule laisse une trace qui se referme lentement",
-      "son_odeur": "BROUILLON — les bulles deviennent grosses et lentes, l'odeur perd son acidité de conserve",
-      "toucher": "BROUILLON — une goutte sur l'assiette froide ne laisse pas d'auréole d'eau"
+      "vue": "la sauce ne bouge plus comme de l'eau, la spatule laisse une trace qui se referme lentement",
+      "son_odeur": "les bulles deviennent grosses et lentes, l'odeur perd son acidité de conserve",
+      "toucher": "une goutte sur l'assiette froide ne laisse pas d'auréole d'eau"
     },
-    "signal_long": "BROUILLON — texte long : réduction suffisante, la trace de spatule au fond.",
+    "signal_long": "La réduction est suffisante quand la spatule tirée au fond de la poêle laisse une trace qui se referme lentement.",
     "video": null,
     "structures": ["poelee", "oeufs"],
     "affinites": ["ail", "concentre_tomate", "oeufs"],
@@ -750,6 +774,7 @@
   {
     "id": "concentre_tomate",
     "nom": "Concentré de tomate",
+    "nom_defini": "le concentré de tomate",
     "rayon": "conserves",
     "nutrition": [],
     "roles": ["roussissement_court"],
@@ -768,11 +793,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le rouge vif vire au rouge brique et la matière accroche au fond",
-      "son_odeur": "BROUILLON — l'odeur de conserve disparaît et devient sucrée, presque caramel",
-      "toucher": "BROUILLON — la spatule racle une pellicule qui résiste au lieu d'une pâte molle"
+      "vue": "le rouge vif vire au rouge brique et la matière accroche au fond",
+      "son_odeur": "l'odeur de conserve disparaît et devient sucrée, presque caramel",
+      "toucher": "la spatule racle une pellicule qui résiste au lieu d'une pâte molle"
     },
-    "signal_long": "BROUILLON — texte long : concentré de tomate à point, entre cru et brûlé la fenêtre est de trente secondes.",
+    "signal_long": "Entre cru et brûlé, le concentré de tomate n'a qu'une trentaine de secondes. Dès qu'il vire au rouge brique, passe à la suite.",
     "video": null,
     "structures": ["poelee", "oeufs"],
     "affinites": ["oignon", "paprika_fume", "steak_hache"],
@@ -782,6 +807,7 @@
   {
     "id": "lentilles_vertes",
     "nom": "Lentilles vertes",
+    "nom_defini": "les lentilles vertes",
     "rayon": "epicerie",
     "nutrition": ["legumineuses", "proteines", "fibres"],
     "roles": ["corps"],
@@ -800,11 +826,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les lentilles ont gonflé et quelques-unes s'ouvrent, le liquide est presque absorbé",
-      "son_odeur": "BROUILLON — le bouillonnement devient sourd, l'odeur devient terreuse et ronde",
-      "toucher": "BROUILLON — écrasée entre deux doigts, la lentille cède sans laisser de cœur dur"
+      "vue": "les lentilles ont gonflé et quelques-unes s'ouvrent, le liquide est presque absorbé",
+      "son_odeur": "le bouillonnement devient sourd, l'odeur devient terreuse et ronde",
+      "toucher": "écrasée entre deux doigts, la lentille cède sans laisser de cœur dur"
     },
-    "signal_long": "BROUILLON — texte long : l'acide se met après cuisson et hors du feu, jamais pendant.",
+    "signal_long": "L'acide se met une fois les lentilles cuites, hors du feu, jamais pendant la cuisson.",
     "video": null,
     "structures": ["poelee"],
     "affinites": ["carotte", "thym", "vinaigre_cidre"],
@@ -813,6 +839,7 @@
   {
     "id": "riz",
     "nom": "Riz",
+    "nom_defini": "le riz",
     "rayon": "epicerie",
     "nutrition": ["feculents"],
     "roles": [],
@@ -831,11 +858,11 @@
     "selectionnable": true,
     "feculent_parallele": true,
     "signal": {
-      "vue": "BROUILLON — le grain a doublé et n'a plus de point blanc opaque en son centre",
-      "son_odeur": "BROUILLON — l'eau ne bouillonne plus franchement, une odeur de céréale chaude monte",
-      "toucher": "BROUILLON — un grain écrasé sur le doigt s'écrase sans grain dur au milieu"
+      "vue": "le grain a doublé et n'a plus de point blanc opaque en son centre",
+      "son_odeur": "l'eau ne bouillonne plus franchement, une odeur de céréale chaude monte",
+      "toucher": "un grain écrasé sur le doigt s'écrase sans grain dur au milieu"
     },
-    "signal_long": "BROUILLON — texte long : lancer l'eau avant tout le reste, c'est ce qui décide de l'heure du dîner.",
+    "signal_long": "Lance l'eau avant tout le reste : c'est elle qui décide de l'heure du dîner.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["oeufs", "tomates_concassees", "poulet_haut_cuisse"],
@@ -844,6 +871,7 @@
   {
     "id": "pates",
     "nom": "Pâtes",
+    "nom_defini": "les pâtes",
     "rayon": "epicerie",
     "nutrition": ["feculents"],
     "roles": [],
@@ -862,11 +890,11 @@
     "selectionnable": true,
     "feculent_parallele": true,
     "signal": {
-      "vue": "BROUILLON — la pâte coupée en deux ne montre plus qu'un trait blanc très fin au centre",
-      "son_odeur": "BROUILLON — l'eau mousse et le bouillonnement s'épaissit",
-      "toucher": "BROUILLON — sous la dent, la pâte résiste une fraction de seconde avant de céder"
+      "vue": "la pâte coupée en deux ne montre plus qu'un trait blanc très fin au centre",
+      "son_odeur": "l'eau mousse et le bouillonnement s'épaissit",
+      "toucher": "sous la dent, la pâte résiste une fraction de seconde avant de céder"
     },
-    "signal_long": "BROUILLON — texte long : garder une louche d'eau de cuisson avant d'égoutter, et pourquoi.",
+    "signal_long": "Garde une louche d'eau de cuisson avant d'égoutter : chargée d'amidon, elle aide la sauce à napper les pâtes.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["ail", "tomates_concassees", "persil_plat"],
@@ -875,6 +903,7 @@
   {
     "id": "amandes_effilees",
     "nom": "Amandes effilées",
+    "nom_defini": "les amandes effilées",
     "rayon": "epicerie",
     "nutrition": ["oleagineux", "matiere_grasse"],
     "roles": ["finition"],
@@ -893,11 +922,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les bords blondissent en premier, le centre reste clair",
-      "son_odeur": "BROUILLON — un léger crépitement démarre et l'odeur grillée arrive brutalement",
-      "toucher": "BROUILLON — l'amande casse net entre les doigts au lieu de plier"
+      "vue": "les bords blondissent en premier, le centre reste clair",
+      "son_odeur": "un léger crépitement démarre et l'odeur grillée arrive brutalement",
+      "toucher": "l'amande casse net entre les doigts au lieu de plier"
     },
-    "signal_long": "BROUILLON — texte long : sortir de la poêle avant la couleur voulue, la chaleur résiduelle finit.",
+    "signal_long": "Sors les amandes de la poêle juste avant la couleur voulue : la chaleur résiduelle finit le travail.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["chou_fleur", "epinards_frais", "citron"],
@@ -906,6 +935,7 @@
   {
     "id": "bouillon_volaille",
     "nom": "Bouillon de volaille",
+    "nom_defini": "le bouillon de volaille",
     "rayon": "epicerie",
     "nutrition": [],
     "roles": ["liquide"],
@@ -924,11 +954,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — au contact du fond, les sucs bruns se décollent et le liquide fonce",
-      "son_odeur": "BROUILLON — un sifflement violent à l'arrivée, puis un frémissement où les bulles montent une par une",
-      "toucher": "BROUILLON — la spatule passée au fond ne rencontre plus rien d'accroché"
+      "vue": "au contact du fond, les sucs bruns se décollent et le liquide fonce",
+      "son_odeur": "un sifflement violent à l'arrivée, puis un frémissement où les bulles montent une par une",
+      "toucher": "la spatule passée au fond ne rencontre plus rien d'accroché"
     },
-    "signal_long": "BROUILLON — texte long : sucs prêts à déglacer, et à quoi ressemble un frémissement correct.",
+    "signal_long": "Les sucs sont prêts à déglacer quand ils sont bruns, pas noirs. Un frémissement correct, ce sont des bulles qui montent une par une, pas une ébullition.",
     "video": null,
     "structures": ["poelee"],
     "affinites": ["thym", "oignon", "lentilles_vertes"],
@@ -937,6 +967,7 @@
   {
     "id": "graines_cumin",
     "nom": "Graines de cumin",
+    "nom_defini": "les graines de cumin",
     "rayon": "epicerie",
     "nutrition": [],
     "roles": ["roussissement_court"],
@@ -955,11 +986,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les graines bougent seules dans le gras et foncent d'un ton",
-      "son_odeur": "BROUILLON — elles crépitent et l'odeur devient chaude et enveloppante",
-      "toucher": "BROUILLON — la graine écrasée à la spatule s'ouvre sèchement"
+      "vue": "les graines bougent seules dans le gras et foncent d'un ton",
+      "son_odeur": "elles crépitent et l'odeur devient chaude et enveloppante",
+      "toucher": "la graine écrasée à la spatule s'ouvre sèchement"
     },
-    "signal_long": "BROUILLON — texte long : réveiller une épice entière dans le gras, quelques secondes suffisent.",
+    "signal_long": "Une épice entière se réveille dans le gras chaud : quelques secondes suffisent.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["chou_fleur", "pois_chiches", "yaourt_grec"],
@@ -968,6 +999,7 @@
   {
     "id": "paprika_fume",
     "nom": "Paprika fumé",
+    "nom_defini": "le paprika fumé",
     "rayon": "epicerie",
     "nutrition": [],
     "roles": ["roussissement_court"],
@@ -986,11 +1018,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — la poudre s'imbibe de gras et devient une pâte rouge foncé",
-      "son_odeur": "BROUILLON — l'odeur fumée s'ouvre d'un coup ; une odeur âcre signifie que c'est déjà brûlé",
-      "toucher": "BROUILLON — la spatule étale sans grumeau sec"
+      "vue": "la poudre s'imbibe de gras et devient une pâte rouge foncé",
+      "son_odeur": "l'odeur fumée s'ouvre d'un coup ; une odeur âcre signifie que c'est déjà brûlé",
+      "toucher": "la spatule étale sans grumeau sec"
     },
-    "signal_long": "BROUILLON — texte long : une épice moulue brûle en quelques secondes, elle entre en dernier.",
+    "signal_long": "Une épice moulue brûle en quelques secondes : elle entre en dernier.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["pomme_terre", "poulet_haut_cuisse", "concentre_tomate"],
@@ -1000,6 +1032,7 @@
   {
     "id": "thym",
     "nom": "Thym",
+    "nom_defini": "le thym",
     "rayon": "condiments",
     "nutrition": [],
     "roles": ["aromatique"],
@@ -1018,11 +1051,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — les feuilles se détachent seules de la tige quand on la remue",
-      "son_odeur": "BROUILLON — l'odeur résineuse se diffuse dans tout le liquide au lieu de rester en surface",
-      "toucher": "BROUILLON — la branche pincée s'effeuille sans effort"
+      "vue": "les feuilles se détachent seules de la tige quand on la remue",
+      "son_odeur": "l'odeur résineuse se diffuse dans tout le liquide au lieu de rester en surface",
+      "toucher": "la branche pincée s'effeuille sans effort"
     },
-    "signal_long": "BROUILLON — texte long : une herbe dure a besoin de temps et de liquide, elle entre tôt.",
+    "signal_long": "Une herbe dure a besoin de temps et de liquide pour donner son goût : elle entre tôt.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["pomme_terre", "champignons_paris", "bouillon_volaille"],
@@ -1031,6 +1064,7 @@
   {
     "id": "persil_plat",
     "nom": "Persil plat",
+    "nom_defini": "le persil plat",
     "rayon": "condiments",
     "nutrition": [],
     "roles": ["finition"],
@@ -1049,11 +1083,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le vert reste vif ; s'il fonce, il a touché le feu",
-      "son_odeur": "BROUILLON — l'odeur fraîche sort au moment de la coupe et retombe en quelques minutes",
-      "toucher": "BROUILLON — les brins restent souples et distincts, ils ne collent pas en paquet"
+      "vue": "le vert reste vif ; s'il fonce, il a touché le feu",
+      "son_odeur": "l'odeur fraîche sort au moment de la coupe et retombe en quelques minutes",
+      "toucher": "les brins restent souples et distincts, ils ne collent pas en paquet"
     },
-    "signal_long": "BROUILLON — texte long : une herbe tendre ne cuit pas, elle se pose sur le plat servi.",
+    "signal_long": "Une herbe tendre ne cuit pas : elle se pose sur le plat servi.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["citron", "ail", "oeufs"],
@@ -1062,6 +1096,7 @@
   {
     "id": "moutarde",
     "nom": "Moutarde",
+    "nom_defini": "la moutarde",
     "rayon": "condiments",
     "nutrition": [],
     "roles": ["liant", "acide"],
@@ -1080,11 +1115,11 @@
     "selectionnable": true,
     "feculent_parallele": false,
     "signal": {
-      "vue": "BROUILLON — le mélange passe de deux couches distinctes à une matière unique et opaque",
-      "son_odeur": "BROUILLON — le piquant monte au nez puis s'arrondit une fois l'huile incorporée",
-      "toucher": "BROUILLON — la sauce nappe le dos de la cuillère et le trait du doigt reste net"
+      "vue": "le mélange passe de deux couches distinctes à une matière unique et opaque",
+      "son_odeur": "le piquant monte au nez puis s'arrondit une fois l'huile incorporée",
+      "toucher": "la sauce nappe le dos de la cuillère et le trait du doigt reste net"
     },
-    "signal_long": "BROUILLON — texte long : la moutarde lie et acidifie, elle tranche si elle bout.",
+    "signal_long": "La moutarde lie la sauce et lui donne de l'acidité. Si elle bout, elle tranche : elle se met hors du feu.",
     "video": null,
     "structures": ["poelee", "plaque", "oeufs"],
     "affinites": ["vinaigre_cidre", "huile_olive", "poulet_haut_cuisse"],

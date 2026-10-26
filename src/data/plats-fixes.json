@@ -18,78 +18,78 @@
       {
         "id": "echine_1",
         "titre": "Sortir la viande",
-        "texte": "BROUILLON — Sors l'échine du réfrigérateur et laisse-la sur le plan de travail. Sale-la généreusement sur toutes ses faces, poivre. Préchauffe le four à 150 °C.",
+        "texte": "Sors l'échine du réfrigérateur et laisse-la sur le plan de travail. Sale-la généreusement sur toutes ses faces, puis poivre-la. Préchauffe le four à 150 °C.",
         "signal": {
-          "vue": "BROUILLON — la surface passe de mouillée et brillante à mate et sèche au toucher",
-          "son_odeur": "BROUILLON — rien encore ; c'est le seul moment du plat où il ne se passe rien",
-          "toucher": "BROUILLON — la main posée sur la viande ne sent plus le froid du réfrigérateur"
+          "vue": "la surface passe de mouillée et brillante à mate et sèche au toucher",
+          "son_odeur": "rien encore ; c'est le seul moment du plat où il ne se passe rien",
+          "toucher": "la main posée sur la viande ne sent plus le froid du réfrigérateur"
         },
-        "signal_long": "BROUILLON — texte long : pourquoi une viande froide et humide ne colore pas.",
+        "signal_long": "Une viande froide et humide ne colore pas : l'eau en surface doit d'abord s'évaporer, et le froid fait chuter la température de la cocotte.",
         "video": null,
         "duree_indicative": 30
       },
       {
         "id": "echine_2",
         "titre": "Colorer sur toutes les faces",
-        "texte": "BROUILLON — Dans la cocotte sur feu vif avec un fond d'huile, pose l'échine et ne la touche plus. Retourne-la face après face.",
+        "texte": "Dans la cocotte sur feu vif avec un fond d'huile, pose l'échine et ne la touche plus. Retourne-la face après face.",
         "signal": {
-          "vue": "BROUILLON — la face posée est brun foncé continu, sans zone grise",
-          "son_odeur": "BROUILLON — grésillement fort et constant, odeur de rôti franche",
-          "toucher": "BROUILLON — la viande se décolle seule quand on la pousse à la pince"
+          "vue": "la face posée est brun foncé continu, sans zone grise",
+          "son_odeur": "grésillement fort et constant, odeur de rôti franche",
+          "toucher": "la viande se décolle seule quand on la pousse à la pince"
         },
-        "signal_long": "BROUILLON — texte long : la coloration n'est pas une étape décorative, c'est la moitié du goût final.",
+        "signal_long": "La coloration n'est pas une étape décorative : elle fait la moitié du goût final.",
         "video": null,
         "duree_indicative": 12
       },
       {
         "id": "echine_3",
         "titre": "Le lit d'aromates",
-        "texte": "BROUILLON — Retire la viande. Dans la même cocotte, fais tomber les oignons coupés en gros quartiers et la tête d'ail coupée en deux à l'horizontale. Ajoute le thym.",
+        "texte": "Retire la viande. Dans la même cocotte, fais tomber les oignons coupés en gros quartiers et la tête d'ail coupée en deux à l'horizontale. Ajoute le thym.",
         "signal": {
-          "vue": "BROUILLON — les oignons sont dorés sur leurs arêtes et les sucs du fond commencent à se dissoudre",
-          "son_odeur": "BROUILLON — l'odeur piquante de l'oignon laisse place à une odeur sucrée",
-          "toucher": "BROUILLON — la spatule décolle le fond brun sans forcer"
+          "vue": "les oignons sont dorés sur leurs arêtes et les sucs du fond commencent à se dissoudre",
+          "son_odeur": "l'odeur piquante de l'oignon laisse place à une odeur sucrée",
+          "toucher": "la spatule décolle le fond brun sans forcer"
         },
-        "signal_long": "BROUILLON — texte long : sucs prêts à déglacer, comment les reconnaître avant qu'ils noircissent.",
+        "signal_long": "Les sucs sont prêts à déglacer quand ils sont brun foncé et accrochent au fond. S'ils noircissent, ils donneront de l'amertume.",
         "video": null,
         "duree_indicative": 8
       },
       {
         "id": "echine_4",
         "titre": "Mouiller et couvrir",
-        "texte": "BROUILLON — Repose la viande sur les aromates. Verse le bouillon chaud à mi-hauteur de la viande, pas plus. Couvre et enfourne à 150 °C.",
+        "texte": "Repose la viande sur les aromates. Verse le bouillon chaud à mi-hauteur de la viande, pas plus. Couvre et enfourne à 150 °C.",
         "signal": {
-          "vue": "BROUILLON — le liquide arrive à mi-hauteur du morceau, le haut reste à l'air",
-          "son_odeur": "BROUILLON — un sifflement bref quand le liquide touche le fond, puis le silence sous le couvercle",
-          "toucher": "BROUILLON — le couvercle est posé franc, aucune vapeur ne s'échappe sur les côtés"
+          "vue": "le liquide arrive à mi-hauteur du morceau, le haut reste à l'air",
+          "son_odeur": "un sifflement bref quand le liquide touche le fond, puis le silence sous le couvercle",
+          "toucher": "le couvercle est posé franc, aucune vapeur ne s'échappe sur les côtés"
         },
-        "signal_long": "BROUILLON — texte long : pourquoi la viande ne doit pas être immergée.",
+        "signal_long": "Immergée, la viande bouillirait au lieu de braiser. À mi-hauteur, le bas mijote dans le jus et le haut cuit doucement dans la vapeur du couvercle.",
         "video": null,
         "duree_indicative": 5
       },
       {
         "id": "echine_5",
         "titre": "Attendre, puis vérifier",
-        "texte": "BROUILLON — Laisse au four sans ouvrir. Après un temps long, vérifie avec une fourchette. Si elle résiste, remets au four et revérifie plus tard.",
+        "texte": "Laisse au four sans ouvrir. Après un temps long, vérifie avec une fourchette. Si elle résiste, remets au four et revérifie plus tard.",
         "signal": {
-          "vue": "BROUILLON — la viande s'est rétractée et le liquide a foncé et épaissi",
-          "son_odeur": "BROUILLON — l'odeur remplit la cuisine sans qu'on ouvre le four",
-          "toucher": "BROUILLON — la fourchette plantée tourne sur elle-même sans effort, la fibre s'ouvre seule"
+          "vue": "la viande s'est rétractée et le liquide a foncé et épaissi",
+          "son_odeur": "l'odeur remplit la cuisine sans qu'on ouvre le four",
+          "toucher": "la fourchette plantée tourne sur elle-même sans effort, la fibre s'ouvre seule"
         },
-        "signal_long": "BROUILLON — texte long : la viande qui cède, le seul signal fiable d'une cuisson longue. Aucune durée ne remplace ce test.",
+        "signal_long": "La viande qui cède sous la fourchette est le seul signal fiable d'une cuisson longue. Aucune durée ne remplace ce test.",
         "video": null,
         "duree_indicative": 150
       },
       {
         "id": "echine_6",
         "titre": "Découvrir et laisser reposer",
-        "texte": "BROUILLON — Retire le couvercle et remonte le four pour la fin. Sors la cocotte et laisse reposer avant de servir. Ajoute le vinaigre de cidre hors du four, dans le jus.",
+        "texte": "Retire le couvercle et monte la température du four pour la fin. Sors la cocotte et laisse reposer avant de servir. Ajoute le vinaigre de cidre hors du four, dans le jus.",
         "signal": {
-          "vue": "BROUILLON — le dessus a repris de la couleur et le jus nappe le dos d'une cuillère",
-          "son_odeur": "BROUILLON — un léger crépitement du gras en surface ; le vinaigre relève l'odeur d'un cran",
-          "toucher": "BROUILLON — goûter le jus : si la bouche est lourde, il manque de l'acide"
+          "vue": "le dessus a repris de la couleur et le jus nappe le dos d'une cuillère",
+          "son_odeur": "un léger crépitement du gras en surface ; le vinaigre relève l'odeur d'un cran",
+          "toucher": "goûter le jus : si la bouche est lourde, il manque de l'acide"
         },
-        "signal_long": "BROUILLON — texte long : l'acide en fin de cuisson longue, ce qu'il corrige exactement.",
+        "signal_long": "Après une cuisson longue, le jus est riche et lourd : quelques gouttes de vinaigre l'allègent et réveillent le goût.",
         "video": null,
         "duree_indicative": 25
       }

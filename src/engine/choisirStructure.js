@@ -97,6 +97,10 @@ export function affecterSlots(selection, structure, catalogue) {
   return { affectations, slotsVides, feculents, retenus, candidats };
 }
 
+const maj = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const pluriel = (d) => d.nom_defini.startsWith('les ');
+const entre = (d) => (pluriel(d) ? "n'entrent" : "n'entre");
+
 /** Règle de sécurité culinaire du §4, appliquée en avertissement et jamais en blocage (arbitrage B3). */
 export function verifierBrunissement(affectations, candidats, catalogue) {
   const proteineAMarquer = affectations.some(
@@ -116,7 +120,7 @@ export function verifierBrunissement(affectations, candidats, catalogue) {
     code: 'brunissement_absent',
     bloquant: false,
     texte:
-      "BROUILLON — Aucune protéine à marquer et aucun agent de brunissement : le plat sera plat. Ajoute de quoi colorer.",
+      "Ni viande à saisir, ni ingrédient qui colore : le plat risque de manquer de goût. Ajoute de quoi colorer, par exemple de l'oignon, des champignons ou du concentré de tomate.",
     suggestions,
   };
 }
@@ -183,17 +187,18 @@ export function choisirStructure(selection, { catalogue, structures, temps_decla
     const details = r.nonAffectes.map((i) => ({
       id: i.id,
       nom: i.nom,
+      nom_defini: i.nom_defini ?? i.nom.toLowerCase(),
       ailleurs: accueilli.get(i.id) || [],
     }));
     const phrases = details.map((d) =>
       d.ailleurs.length
-        ? `${d.nom} n'entre pas dans « ${r.nom} », sa place est dans « ${d.ailleurs.join(' » ou « ')} ».`
-        : `${d.nom} n'entre dans aucune structure ce soir.`
+        ? `${maj(d.nom_defini)} ${entre(d)} pas dans « ${r.nom} » : ${pluriel(d) ? 'leur' : 'sa'} place est plutôt dans « ${d.ailleurs.join(' » ou « ')} ».`
+        : `${maj(d.nom_defini)} ${entre(d)} dans aucune des propositions ce soir.`
     );
     r.avertissements.push({
       code: 'ingredients_non_utilises',
       bloquant: false,
-      texte: `BROUILLON — ${phrases.join(' ')}`,
+      texte: phrases.join(' '),
       suggestions: details.map((d) => d.id),
       details,
     });
@@ -203,7 +208,7 @@ export function choisirStructure(selection, { catalogue, structures, temps_decla
       r.avertissements.push({
         code: 'trop_d_ingredients',
         bloquant: false,
-        texte: `BROUILLON — ${r.nom} tient ${r.structure.max_ingredients} ingrédients au maximum.`,
+        texte: `« ${r.nom} » accepte ${r.structure.max_ingredients} ingrédients au maximum.`,
         suggestions: [],
       });
     }
