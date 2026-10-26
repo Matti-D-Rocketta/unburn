@@ -1,3 +1,5 @@
+import Presentation from '../components/Presentation.jsx';
+
 const ORDRE_RAYONS = ['legumes', 'frais', 'boucherie', 'epicerie', 'conserves', 'condiments'];
 const NOM_RAYON = {
   legumes: 'Légumes',
@@ -21,6 +23,7 @@ export default function GardeManger({ catalogue, selection, onChange, onValider 
 
   return (
     <div className="min-h-screen bg-white text-neutral-900 px-4 py-6">
+      <Presentation />
       <h1 className="text-3xl font-bold mb-2">Garde-manger</h1>
       <p className="text-lg mb-6">
         Coche ce que tu as chez toi. Tu pourras revenir ici à tout moment.
@@ -61,7 +64,7 @@ export default function GardeManger({ catalogue, selection, onChange, onValider 
         disabled={selection.length === 0}
         className="w-full min-h-[48px] px-6 py-3 rounded-lg text-xl font-semibold bg-emerald-700 text-white disabled:bg-neutral-300 disabled:text-neutral-500"
       >
-        Valider et passer à Ce soir
+        Valider et passer à « Ce soir »
       </button>
     </div>
   );

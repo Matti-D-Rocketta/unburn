@@ -1,3 +1,5 @@
+import Presentation from '../components/Presentation.jsx';
+
 const MIN_SELECTION = 3;
 const MAX_SELECTION = 6;
 
@@ -28,6 +30,7 @@ export default function CeSoir({
   if (disponibles.length === 0) {
     return (
       <div className="min-h-screen bg-white text-neutral-900 px-4 py-6">
+        <Presentation />
         <h1 className="text-3xl font-bold mb-4">Ce soir</h1>
         <p className="text-lg mb-6">Aucun ingrédient coché au garde-manger.</p>
         <button
@@ -43,10 +46,11 @@ export default function CeSoir({
 
   return (
     <div className="min-h-screen bg-white text-neutral-900 px-4 py-6">
+      <Presentation />
       <h1 className="text-3xl font-bold mb-2">Ce soir</h1>
       <p className="text-lg mb-2">Choisis entre 3 et 6 ingrédients.</p>
       <p className="text-base text-neutral-600 mb-6">
-        L'équilibre à viser : une protéine, un corps, un aromatique, un élément frais.
+        L'équilibre à viser : une protéine, un légume ou un féculent, un aromatique et un élément frais.
       </p>
 
       {dernierValide.length > 0 && (
