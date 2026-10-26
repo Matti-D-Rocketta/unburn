@@ -19,7 +19,7 @@ export default function Cuisson({ etapes, indexEtape, onSuivant, onPrecedent, on
         </p>
       </div>
 
-      <EtapeCard etape={etape} />
+      <EtapeCard key={etape.id ?? indexEtape} etape={etape} />
 
       <div className="px-4 pb-8 flex gap-3">
         {!premiere && (
