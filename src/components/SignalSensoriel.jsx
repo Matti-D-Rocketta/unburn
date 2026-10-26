@@ -8,15 +8,15 @@ export default function SignalSensoriel({ signal, signalLong, video }) {
       <dl className="space-y-3 text-lg">
         <div>
           <dt className="font-semibold text-neutral-700">Vue</dt>
-          <dd>{signal.vue}</dd>
+          <dd className="first-letter:uppercase">{signal.vue}</dd>
         </div>
         <div>
           <dt className="font-semibold text-neutral-700">Son ou odeur</dt>
-          <dd>{signal.son_odeur}</dd>
+          <dd className="first-letter:uppercase">{signal.son_odeur}</dd>
         </div>
         <div>
           <dt className="font-semibold text-neutral-700">Toucher</dt>
-          <dd>{signal.toucher}</dd>
+          <dd className="first-letter:uppercase">{signal.toucher}</dd>
         </div>
       </dl>
 

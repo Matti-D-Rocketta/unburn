@@ -95,7 +95,7 @@ export default function Propositions({
               {platLong.duree_min} min · {platLong.portions} portions
             </p>
             <p className="text-base text-neutral-600 mb-3">
-              Vérifie que tu as : {ingredientsPlatLong.map((i) => i.nom).join(', ')}.
+              Vérifie que tu as : {ingredientsPlatLong.map((i) => i.nom_defini ?? i.nom).join(', ')}.
             </p>
             <button
               type="button"
